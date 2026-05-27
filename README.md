@@ -1,1 +1,1 @@
-# forest-fire-detection-ai-
+# forest-fire-detection-ai
