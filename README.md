@@ -60,5 +60,5 @@ Project completed as part of final year university work and further improvements
 
 ## 👨‍💻 Author
 Dhruval Prajapati  
-GitHub: https://github.com/dhruval-codes  
-LinkedIn: [https://www.linkedin.com/in/dhruval-prajapati-1732aa316](https://www.linkedin.com/in/dhruval-prajapati-1732aa316)
+GitHub: https://github.com/dhruvalcodes
+LinkedIn: www.linkedin.com/in/dhruval-prajapati-1732aa316
