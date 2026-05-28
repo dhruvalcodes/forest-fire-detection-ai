@@ -1,0 +1,135 @@
+.result-page {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, #121421 0%, #1a1c2b 100%);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 30px;
+    text-align: center;
+}
+
+
+.result-page h2 {
+    font-size: 2.5rem;
+    color: #ff6b00;
+}
+
+
+.result-image-wrapper {
+    background: #1a1f2e;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 650px;
+}
+
+.result-image-wrapper img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3);
+}
+
+
+.result-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 650px;
+}
+
+.info-box {
+    background: #1a1f2e;
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.2);
+    text-align: left;
+}
+
+
+.confidence-box.danger {
+    color: #ff0000;
+}
+
+.confidence-box.moderate {
+    color: #ff7f00;
+}
+
+.confidence-box.low {
+    color: #ffff00;
+}
+
+.confidence-box.very-low {
+    color: #00ff00;
+}
+
+
+.suggestion-box {
+    color: #ffffffcc;
+}
+
+
+.back-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 40px;
+    background: linear-gradient(45deg, #d5722b, #ff6b00);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 107, 0, 0.4);
+}
+
+.back-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px #d5722b;
+}
+
+
+.no-result {
+    font-size: 1.5rem;
+    color: #ff4c4c;
+    margin-top: 50px;
+}
+
+
+
+.suggestion-box {
+    color: #ffffffcc;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.keyword-fire {
+    color: #ff4c4c;
+    font-weight: 600;
+}
+
+.keyword-smoke {
+    color: #ffb84c;
+    font-weight: 600;
+}
+
+.keyword-dry {
+    color: #efff3d;
+    font-weight: 600;
+}
+
+.keyword-patchy {
+    color: #2eff16;
+    font-weight: 600;
+}
