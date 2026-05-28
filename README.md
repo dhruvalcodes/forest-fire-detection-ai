@@ -1,5 +1,4 @@
 # 🔥 FireGuard – AI Forest Fire Detection System
-
 FireGuard is an AI-powered full-stack application that detects forest fire, smoke, dry vegetation, and patchy areas from images using deep learning models and provides real-time safety suggestions.
 
 ## 🚀 Overview
