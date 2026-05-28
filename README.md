@@ -19,7 +19,7 @@ It analyzes uploaded forest images and returns:
 
 ## 🧠 AI Models Used
 
-### 1. CNN Model
+### 1. CNN Model (MobileNetV2)
 - Classifies image into:
   - Fire
   - Smoke
@@ -53,16 +53,16 @@ It analyzes uploaded forest images and returns:
 - Lucide Icons
 - CSS
 
-
 ## 📁 Project Structure
-backend/
+Backend/
 ├── app/
 ├── models/
 ├── fonts/
 ├── predictions/
+├── requirements.txt
 ├── main.py
 
-frontend/
+Frontend/
 ├── src/
 ├── public/
 ├── index.html
@@ -122,8 +122,8 @@ Upload an image → returns:
 ## 👨‍💻 Author
 
 Dhruval Prajapati  
-GitHub: [https://github.com/dhruvalcodes](https://github.com/dhruvalcodes)
-LinkedIn: [www.linkedin.com/in/dhruval-prajapati-1732aa316](http://www.linkedin.com/in/dhruval-prajapati-1732aa316)
+GitHub: https://github.com/dhruvalcodes
+LinkedIn: http://www.linkedin.com/in/dhruval-prajapati-1732aa316
 
 
 ## 📌 Note
