@@ -1,64 +1,131 @@
-Forest Fire Detection AI
-AI-based web application that detects forest fire, smoke, and dry vegetation from images using deep learning models.
+# 🔥 FireGuard – AI Forest Fire Detection System
+
+FireGuard is an AI-powered full-stack application that detects forest fire, smoke, dry vegetation, and patchy areas from images using deep learning models and provides real-time safety suggestions.
+
+## 🚀 Overview
+
+This system combines:
+- CNN-based image classification
+- YOLO object detection
+- FastAPI backend
+- React frontend
+
+It analyzes uploaded forest images and returns:
+- Detection results (Fire / Smoke / Normal / Patchy)
+- Bounding boxes for detected objects
+- AI-generated risk suggestions
+- Confidence scores
 
 
-Project Overview
-This project uses machine learning and computer vision to classify images and detect possible forest fire risks. It includes a frontend for user interaction and a backend for AI processing.
+## 🧠 AI Models Used
 
- Tech Stack
-- Python
-- FastAPI / Flask (Backend)
-- React / Vite (Frontend)
-- TensorFlow / PyTorch (Model)
+### 1. CNN Model
+- Classifies image into:
+  - Fire
+  - Smoke
+  - Patchy
+  - Normal
+- Provides confidence score
+
+### 2. YOLO Model (Ultralytics)
+- Detects objects:
+  - fire
+  - smoke
+  - dry
+  - patchy
+- Draws bounding boxes on image
 
 
-Project Structure
-Backend/ → AI model + API
-Frontend/ → User interface
+## 🛠️ Tech Stack
+
+### Backend:
+- FastAPI
+- TensorFlow / Keras
+- YOLO (Ultralytics)
+- OpenCV
+- Pillow
+- NumPy
+
+### Frontend:
+- React (Vite)
+- JavaScript
+- React Router
+- Lucide Icons
+- CSS
 
 
-How to Run (Backend)
+## 📁 Project Structure
+backend/
+├── app/
+├── models/
+├── fonts/
+├── predictions/
+├── main.py
+
+frontend/
+├── src/
+├── public/
+├── index.html
+├── package.json
+
+
+## ⚙️ How to Run
+
+### 🔹 Backend
 cd backend
 pip install -r requirements.txt
-python app.py
+uvicorn main:app –reload
 
-How to Run (frontend)
+### 🔹 Frontend
 cd frontend
 npm install
 npm run dev
 
- Features
-- Image upload for detection  
-- AI prediction (fire/smoke/normal/Patchygrass(extra))  
-- Confidence score  
-- Web interface  
+
+## 📡 API Endpoint
+
+### POST /detect
+
+Upload an image → returns:
+- CNN prediction
+- Confidence score
+- YOLO bounding boxes
+- AI safety suggestion
+- Output image with annotations
 
 
-Model
-Trained using CNN-based architecture for image classification.
+## 🧾 Example Output Logic
 
-Status
-Project completed as part of final year university work and further improvements are ongoing.
-
-
- Author
-Dhruval Prajapati  
-GitHub: https://github.com/dhruval-codes  
-LinkedIn:  Features
-- Image upload for detection  
-- AI prediction (fire/smoke/normal)  
-- Confidence score  
-- Web interface  
+- Fire + Smoke + Dry → High risk alert
+- Fire detected → Fire warning
+- Smoke detected → Low/medium risk
+- Dry area → Potential risk warning
 
 
-##  Model
-Trained using CNN-based architecture for image classification.
+## 🎯 Key Features
 
-## Status
-Project completed as part of final year university work and further improvements are ongoing.
+- Real-time image analysis
+- Dual AI model system (CNN + YOLO)
+- Annotated output images
+- Risk-based AI suggestions
+- Full-stack web application
+
+
+## 📊 Highlights
+
+- Combines classification + object detection
+- FastAPI backend for high performance
+- Interactive React UI
+- Production-style ML pipeline
 
 
 ## 👨‍💻 Author
+
 Dhruval Prajapati  
-GitHub: https://github.com/dhruvalcodes
-LinkedIn: www.linkedin.com/in/dhruval-prajapati-1732aa316
+GitHub: [https://github.com/dhruvalcodes](https://github.com/dhruvalcodes)
+LinkedIn: [www.linkedin.com/in/dhruval-prajapati-1732aa316](http://www.linkedin.com/in/dhruval-prajapati-1732aa316)
+
+
+## 📌 Note
+
+This project was developed as part of a final year university project and is continuously being improved for real-world deployment.
